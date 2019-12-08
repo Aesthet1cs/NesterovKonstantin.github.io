@@ -1,0 +1,51 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 50.5%;
+    outline: none;
+  }
+
+  @media (min-width: 680px){
+    html{
+      font-size: 62.5%;
+    }
+}
+
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+body{
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+}
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    outline: none;
+  }
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+}
+  
+.grid {
+  display: grid;
+  grid-template-columns: minmax(40px, 75px) minmax(150px, 1150px);
+  grid-template-rows: minmax(45px, 75px) minmax(300px, 640px);
+}
+@media (min-width: 500px){
+  .grid{
+    grid-template-columns: minmax(45px, 75px) minmax(320px, 1150px) minmax(100px ,190px);
+  }
+}
+@media (min-width: 894px){
+  .grid{
+    grid-template-rows: minmax(45px, 75px) minmax(300px, 750px);
+  }
+}
+  
